@@ -8,6 +8,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.shophub.questnavigasiui_059.view.FormIsian
+import com.shophub.questnavigasiui_059.view.TampilData
 
 enum class Navigasi {
     Formulir,
