@@ -1,6 +1,9 @@
 package com.shophub.questnavigasiui_059
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import java.lang.reflect.Modifier
 
 enum class Navigasi {
     Formulir,
@@ -9,7 +12,8 @@ enum class Navigasi {
 
 @Composable
 fun DataApp(
-
+    navController: NavHostController = rememberNavController(),
+    modifier: Modifier
 ){
 
 }
