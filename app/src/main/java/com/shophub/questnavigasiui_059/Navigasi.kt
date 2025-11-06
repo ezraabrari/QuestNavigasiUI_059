@@ -1,11 +1,12 @@
 package com.shophub.questnavigasiui_059
 
 import androidx.compose.material3.Scaffold
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavHost
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import java.lang.reflect.Modifier
 
 enum class Navigasi {
     Formulir,
@@ -22,7 +23,14 @@ fun DataApp(
             navController = navController,
             startDestination = Navigasi.Formulir.name,
 
-
+            modifier = Modifier.padding(isiRuang)){
+            composable(route = Navigasi.Formulir.name){
+                FormIsian (
+                    OnSubmitBtnClick = {
+                        navController.navigate(Navigasi.Detail.name)
+                    }
+                )            }
+        }
         )
     }
 
